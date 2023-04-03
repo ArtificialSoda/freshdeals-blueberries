@@ -1,0 +1,10 @@
+.breadcrumb-item {
+    display: inline;
+    font-size: 16px;
+    padding: 0 5px;
+    
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: " ➤ "
+}

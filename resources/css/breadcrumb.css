@@ -1,10 +1,84 @@
-.breadcrumb-item {
+/* .breadcrumb-item {
     display: inline;
-    font-size: 16px;
+    font-size: 20px;
     padding: 0 5px;
     
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
     content: " ➤ "
+} */
+
+.breadcrumb {
+    background-color: silver;
+    padding: 16px;
+}
+
+.breadcrumb ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.breadcrumb li {
+    margin-right: 0;
+    position: relative;
+    border: 1px solid black;
+}
+
+.breadcrumb li:not(:last-child)::after {
+
+    content: '';
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    border-left-color: silver;
+    border-width: 10px;
+    margin-top: -10px;
+    margin-left: 0px;
+    z-index: 9;
+
+}
+
+
+
+/* .breadcrumb li:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    border: solid transparent;
+    border-left-color: silver;
+    border-width: 10px;
+    margin-top: -10px;
+    margin-left: -1px;
+} */
+.breadcrumb a {
+    text-decoration: none;
+    color: #448000;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+    background-color: silver;
+    position: relative;
+}
+
+.breadcrumb li:last-child {
+    border-radius: 0 5px 5px 0;
+}
+
+.breadcrumb li:last-child a {
+    background-color: #448000;
+    color: #000;
+}
+
+.breadcrumb a:hover {
+    color: black;
+}
+
+.breadcrumb li:last-child a:hover {
+    background-color: #448000;
+    color: #fff;
 }

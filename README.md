@@ -8,4 +8,16 @@ Description: /* The goal is to improve the user experience of this FreshDeals gr
 
 Start date: April 3rd, 2023
 
-End date: TBD
+End date: April 4th, 2023
+
+➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤➤
+
+
+Before
+
+<img src="resources/images/before.png" alt="Before changes" width="80%">
+
+After
+
+<img src="resources/images/after.png" alt="After changes" width="80%">
+
